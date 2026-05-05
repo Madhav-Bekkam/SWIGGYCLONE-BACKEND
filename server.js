@@ -478,7 +478,7 @@ const { Server } = require("socket.io");
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "https://madfoodzone.vercel.app/", methods: ["GET", "POST", "PUT"] }
+  cors: { origin: ["https://madfoodzone.vercel.app","http://localhost:3000"] , methods: ["GET", "POST", "PUT"] }
 });
 
 io.on("connection", (socket) => {
