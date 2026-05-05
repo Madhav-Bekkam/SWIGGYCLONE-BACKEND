@@ -14,7 +14,7 @@ app.use(express.json());
 //const JWT_SECRET = process.env.JWT_SECRET;
 
 // 🗄️ Database Connection
-mongoose.connect("mongodb+srv://mad-admin:<Chanti2003>@cluster0.sf4ylpi.mongodb.net/swiggy-clone?appName=Cluster0")
+mongoose.connect("mongodb+srv://mad-admin:Chanti2003@cluster0.sf4ylpi.mongodb.net/swiggy-clone?appName=Cluster0")
   .then(() => {
     console.log("✅ MongoDB Connected to:", mongoose.connection.name);
     seedDatabase(); 
