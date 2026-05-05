@@ -14,7 +14,7 @@ app.use(express.json());
 const JWT_SECRET = process.env.JWT_SECRET;
 
 // 🗄️ Database Connection
-mongoose.connect("process.env.MONGO_URI")
+mongoose.connect("process.env.MONGO_URL")
   .then(() => {
     console.log("✅ MongoDB Connected to:", mongoose.connection.name);
     seedDatabase(); 
