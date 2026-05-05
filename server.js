@@ -1,4 +1,4 @@
-require("dotenv").config(); 
+//require("dotenv").config(); 
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -11,10 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 // 🔐 JWT Secret Key (In production, this should go in a .env file)
-const JWT_SECRET = process.env.JWT_SECRET;
+//const JWT_SECRET = process.env.JWT_SECRET;
 
 // 🗄️ Database Connection
-mongoose.connect("process.env.MONGO_URI")
+mongoose.connect("mongodb+srv://mad-admin:<Chanti2003>@cluster0.sf4ylpi.mongodb.net/swiggy-clone?appName=Cluster0")
   .then(() => {
     console.log("✅ MongoDB Connected to:", mongoose.connection.name);
     seedDatabase(); 
