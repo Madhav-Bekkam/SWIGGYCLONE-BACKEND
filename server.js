@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔐 JWT Secret Key (In production, this should go in a .env file)
-const JWT_SECRET = swiggy_super_secret_key_2026;
+const JWT_SECRET = "swiggy_super_secret_key_2026";
 
 // 🗄️ Database Connection
 mongoose.connect("mongodb+srv://mad-admin:Chanti2003@cluster0.sf4ylpi.mongodb.net/swiggy-clone?appName=Cluster0")
