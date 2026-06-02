@@ -14,7 +14,7 @@ app.use(express.json());
 const JWT_SECRET = "swiggy_super_secret_key_2026";
 
 // 🗄️ Database Connection
-mongoose.connect("mongodb+srv://mad-admin:Chanti2003@cluster0.sf4ylpi.mongodb.net/swiggy-clone?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("✅ MongoDB Connected to:", mongoose.connection.name);
     seedDatabase(); 
